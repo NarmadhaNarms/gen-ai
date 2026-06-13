@@ -10,7 +10,7 @@ review = ["This is a great movie. I really enjoye+++d it!",
                    "i detest sac"]
 def clean_text(text):
     doc = nlp(text)
-    clean_text = []
+    clean_text = []   
     for i in doc:
         if i.is_punct:            continue
         if i.is_digit:            continue
